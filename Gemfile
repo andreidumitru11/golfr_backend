@@ -45,6 +45,10 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # User management
 gem 'devise'
 gem 'devise-jwt'
+gem 'faraday-retry'
+gem 'pronto'
+gem 'pronto-rubocop'
+
 
 # Static code analysis
 gem 'rubocop', '1.27.0'
