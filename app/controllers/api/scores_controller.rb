@@ -16,7 +16,7 @@ module Api
     end
 
     def user_feed
-      scores = Score.all.order(played_at: :desc, id: :desc)
+      scores = Score.all.order(played_at: :desc, id: :desc).limit(25)
       serialized_scores = scores.map(&:serialize)
 
       response = {
